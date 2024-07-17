@@ -3,6 +3,14 @@ plugins {
     id 'application'
 }
 
+repositories{   
+    jcenter() //lugar de onde vai baixar a biblioteca
+}
+
+dependencies{
+    implementation("com.google.guava:guava:33.2.1-jre") // encontrei no maven a versao mais atualizada do import
+}
+
 application {
     // Define the main class for the application.
     mainClass = 'Dependency.Main'
